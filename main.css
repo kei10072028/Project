@@ -79,10 +79,10 @@ text-align: justify; /* Aligns the text within the <aside> element to be justifi
 }
 #intro-image {
 /* Sets the height of the footer image to 100px */ 
-height: 400px;
+height: 500px;
 /* Sets the width of the footer image to 100px
 (fixed the incorrect syntax with an equal sign) */
-width: 1200px;
+width: 1500px;
 }
 #history-image {
 float: left;
