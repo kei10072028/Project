@@ -58,12 +58,16 @@ margin: 10px;
 height: 600px;
 width=800px;
 }
+.background-section {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+}
 section{	
 /* Positions the section element to the right side of its containing
 element, allowing other floated elements (like aside) to align next to it */ 
 float: right;
 /* Sets a fixed width of 420px for the section element */
-width: 70px;
+width: 600px;
 /* Ensures the section element has a minimum height of 480px */
 min-height: 480px;
 /* Adds 20px of padding on the left side of the section content */ 
