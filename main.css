@@ -63,10 +63,6 @@ width: 800px;
     padding: 20px;
 }
 section{	
-/* Positions the section element to the right side of its containing
-element, allowing other floated elements (like aside) to align next to it */ 
-width: 600px;
-/* Ensures the section element has a minimum height of 480px */
 min-height: 480px;
 /* Adds 20px of padding on the left side of the section content */ 
 padding-left: 20px;
@@ -75,7 +71,7 @@ padding-left: 20px;
 text-align: justify;
 }
 aside{
-width: 600px; /* Sets a fixed width of 420px for the <aside> element */
+float: left;
 min-height: 480px; /* Ensures the <aside> element has a minimum height of 480px */ 
 padding-right: 20px; /* Adds 20px of space on the right side of the <aside> content */ 
 padding-top: 20px; /* Adds 20px of space at the top of the <aside> content */
