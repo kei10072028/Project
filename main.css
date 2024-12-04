@@ -1,0 +1,19 @@
+footer{	
+/* Clears any floating elements above it, ensuring the footer starts below both floated elements (aside and section) */ 
+clear: both;
+/* Sets the fixed width of the footer to 890px, matching the body width for alignment */
+width: 890px;
+/* Sets the height of the footer to 100px */ 
+height: 100px;
+/* Centers the text content within the footer */ 
+text-align: center;
+}
+
+#footer-image {
+/* Sets the height of the footer image to 100px */ 
+height: 50px;
+/* Sets the width of the footer image to 100px
+(fixed the incorrect syntax with an equal sign) */
+width: 50px;
+
+}
