@@ -15,6 +15,7 @@ height: 40px;
 /* Sets the width of the footer image to 100px
 (fixed the incorrect syntax with an equal sign) */
 width: 40px;
+align: center;
 }
 nav{  
   display:block;
