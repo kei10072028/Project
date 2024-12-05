@@ -1,109 +1,217 @@
-footer{	
-/* Clears any floating elements above it, ensuring the footer starts below both floated elements (aside and section) */ 
-clear: both;
-/* Sets the fixed width of the footer to 890px, matching the body width for alignment */
-width: 890px;
-/* Sets the height of the footer to 100px */ 
-height: 100px;
-/* Centers the text content within the footer */ 
-text-align: center;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#footer-image {
-/* Sets the height of the footer image to 100px */ 
-height: 40px;
-/* Sets the width of the footer image to 100px
-(fixed the incorrect syntax with an equal sign) */
-width: 40px;
-align: center;
-}
-nav{  
-  display:block;
-}  
-/* style the unordered list */
-ul {
-list-style-type: none; /* Removes default bullet points from the list items */ 
-margin: 0; /* Removes default margin around the unordered list */
-padding: 0; /* Removes default padding inside the unordered list */
-overflow: hidden; 
-background-color: #004225; /* Sets a dark blue background for the navigation bar */ 
-border-radius: 20px; /* Rounds the corners of the navigation bar */
-/* Style individual list items */
-}
-li {
-float: left; /* Positions the list items horizontally in a row */
-/* Style the links within list items */
-}
-li a {
-display: block; /* Makes the entire area of the link clickable */ 
-color: #FFFFFF; /* Sets the text color of the links to white */
-text-align: center; /* Centers the text within the link */
-padding: 16px 18px; /* Adds space inside the link for better readability */ 
-text-decoration: none; /* Removes the default underline from links */
-/* style for hover state on non-active links */
-}
-li a:hover:not(.active) { 
-background-color: #87a96b; /* Changes the background color to light gray when hovering
-/* Style for the active link */
-}
-  .active {
-background-color: #000000;  
+/* Global Body and Text Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-#intro-image {
-/* Positions the element to the left of its containing element,
-allowing text or other elements to flow around it */
-float: center;
-/* Adds a 10px margin around all sides of the element for spacing */ 
-margin: 10px;
-height: 600px;
-width: 800px;
+/* Header Styles */
+header {
+    background: url('mountain-bike.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
 }
-.background-section {
-    background-color: #f0f0f0; /* Light gray background */
-    padding: 20px;
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-section{	
-min-height: 480px;
-/* Adds 20px of padding on the left side of the section content */ 
-padding-left: 20px;
-/* Adds a 5px dotted border to the left side of the section, with a light brown color (#b2a497) */
-/* Aligns the text within the section to be justified, ensuring clean, block-style text alignment */
-text-align: justify;
+
+header h4 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 30px;
 }
-aside{
-float: left;
-min-height: 480px; /* Ensures the <aside> element has a minimum height of 480px */ 
-padding-right: 20px; /* Adds 20px of space on the right side of the <aside> content */ 
-padding-top: 20px; /* Adds 20px of space at the top of the <aside> content */
-text-align: justify; /* Aligns the text within the <aside> element to be justified */
+
+header #intro-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
-#intro-image {
-/* Sets the height of the footer image to 100px */ 
-height: 620px;
-/* Sets the width of the footer image to 100px
-(fixed the incorrect syntax with an equal sign) */
-width: 1860px;
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a300;
+}
+
+/* Aside Section Styles (Story Section) */
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+aside header h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    width: 48%;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #666;
+}
+
 #history-image {
-float: left;
-/* Adds a 10px margin around all sides of the element for spacing */ 
-margin: 10px;
-height: 200px;
-width=125px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
-header{
-h1 {	
-  font-size: 40px;    
-  font-family: Arial, Helvetica, sans-serif;	
-  text-align: center;	
-  text-transform: uppercase;	
-  color: #000000;
+
+/* Why Us Section */
+.background-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
 }
-  h4 {		
-  font-size: 20px;    
-  font-family: Arial, Helvetica, sans-serif;	
-  text-align: center;	
-  color: #000000;
+
+.background-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
 }
+
+.background-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.background-section .section {
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.background-section h4 {
+    font-size: 1.8rem;
+    color: #f4a300;
+    margin-bottom: 10px;
+}
+
+.background-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: #f4a300;
+}
+
+footer #footer-image {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h4 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .background-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .background-section .section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+
+    footer #footer-image {
+        width: 25px;
+        height: 25px;
+    }
 }
