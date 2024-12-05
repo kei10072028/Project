@@ -96,12 +96,13 @@ aside {
 
 aside h3 {
     font-size: 2em;
-    color: #2c3e50;
+    color: #f39c12;
     margin-bottom: 20px;
 }
 
 #history-image {
-    width: 100%;
+    float: right;
+    width: 50%;
     height: auto;
     border-radius: 5px;
     margin-top: 20px;
