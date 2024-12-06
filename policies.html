@@ -3,6 +3,32 @@
 		<head>
 			<title>My Personal Website</title>
 			<link href="main.css" rel="stylesheet" />
+			<style>
+				.policies-section {
+				display: flex;
+				justify-content: center;  /* Horizontally center the content */
+				align-items: flex-start;  /* Align the content to the top */
+				padding: 20px;
+				max-width: 100%; /* Allow it to grow fully */
+				background-color: #ffffff;
+			}
+
+			/* Container for the policy content */
+			.container {
+				width: 80%;             /* Limit the content width */
+				max-width: 1000px;      /* Set a max width to prevent overly wide sections */
+				margin: 0 auto;         /* Center it horizontally */
+				padding: 20px;
+			}
+
+			/* Section styling within container */
+			.section {
+				background-color: #ffffff;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			}
+			</style>
 		</head>
 		<body>
 			<header>
@@ -19,7 +45,7 @@
 				<li><a href="products.html">Products</a></li>        
 				</ul> 
 			</nav>
-  			<aside>
+  			<aside class="policies-section">
 			<header>
 				<h3>Policies</h3>
 				<div class="container">
